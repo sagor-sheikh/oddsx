@@ -377,7 +377,12 @@ select {
 .g1-bg {
 	background: rgba(var(--g1), 1);
 }
-
+.r1-color {
+	color: rgba(var(--r1), 1);
+}
+.r1-bg {
+	background: rgba(var(--r1), 1);
+}
 .border-one {
 	border: 1px solid #35C31E;
 }
@@ -386,6 +391,9 @@ select {
 }
 .border-three {
 	border: 1px solid #0D1322;
+}
+.border-four {
+	border: 1px solid #2C3655;
 }
 
 .rounded-17 {
@@ -519,26 +527,12 @@ select {
 	}
 
 	&.third-alt {
-		background-color: #403866;
-		color: rgb(var(--p2));
+		background-color: rgb(var(--p1));
+		outline: 2px #2C3655 solid;
 
-		i {
-			color: rgb(var(--p2));
-		}
-
-		&::before,
-		&::after {
-			background-color: rgb(var(--s2));
-		}
-
-		&:hover,
-		&:focus,
-		&.active {
-			color: rgb(var(--p2));
-
-			i {
-				color: rgb(var(--p2));
-			}
+		&:hover {
+			color: rgba(var(--n8), 1);
+			outline: 2px #35C31E solid;
 		}
 	}
 
