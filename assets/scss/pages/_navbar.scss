@@ -8,7 +8,9 @@
         margin-left: 235px;
         border-bottom: 1px solid var(--brt1);
         border-left: 1px solid var(--brt1);
-
+        @include maxQuery(1199) {
+            margin-left: 150px;
+        }
         @include maxQuery(991) {
             margin-left: 95px;
             border-left: none;
@@ -29,6 +31,23 @@
                     font-size: 16px;
                     background: rgb(var(--p2));
                     border-radius: 4px;
+                    @include maxQuery(1399){
+                        left: -40%;
+                    }
+                    @include maxQuery(1199){
+                        left: -70%;
+                    }
+                    @include maxQuery(991){
+                        left: -130%;
+                    }
+                    @include maxQuery(575) {
+                        left: -60%;
+                    }
+                    @include maxQuery(480) {
+                        .respon-icon{
+                            display: none;
+                        }
+                    }
                 }
     
                 .current_lang {
@@ -39,6 +58,9 @@
     
                 .lang {
                     padding: 10px 15px;
+                    @include maxQuery(480){
+                        padding: 10px 5px;
+                    }
                 }
     
                 .lang.selected {
@@ -914,7 +936,7 @@
                 top: 25%;
 
                 @include maxQuery(575) {
-                    right: 24%;
+                    right: 18%;
                     top: 10px;
                 }
             }

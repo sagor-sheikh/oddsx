@@ -1,12 +1,20 @@
 // Fixed footer starts
 .fixed_footer {
     position: fixed;
-    right: 10%;
+    right: 7%;
     border-radius: 8px;
     bottom: 0;
     width: 300px;
     z-index: 9999;
-
+    transform: translateY(91.5%);
+    transition: 0.5s linear;
+    @include maxQuery(350){
+        right: 3%;
+    }
+    .footfixedbtn{
+        transform: rotate(180deg);
+        transition: 0.5s linear;
+    }
     &__head {
         background-color: rgb(var(--g1));
         border-radius: 20px 20px 0 0;
@@ -138,35 +146,59 @@
             padding: 8px;
         }
 
-        &-scr{
+        &-scr {
             background-color: rgb(var(--g1), 0.40);
         }
-        &-formarea{
-            input{
-                &::placeholder{
+
+        &-formarea {
+            input {
+                &::placeholder {
                     color: #959AAA;
                     font-size: 12px;
                 }
             }
         }
-        &-selectammount{
-            span{
+
+        &-selectammount {
+            span {
                 transition: 0.5s;
-                &:hover{
+
+                &:hover {
                     background: rgba(53, 195, 30, 0.50);
                 }
             }
-            .active{
+
+            .active {
                 background: rgba(53, 195, 30, 0.50);
             }
         }
-        &-bottom{
-            border-top: 1px solid #8A92AB;
-            border-bottom: 1px solid #8A92AB;
-            padding: 10px 0;
-            .right-border{
-                border-right: 1px solid #8A92AB;
+
+        &-bottom {
+
+            // border-top: 1px solid #8A92AB;
+            // border-bottom: 1px solid #8A92AB;
+            // padding: 10px 0;
+            .right-border {
+                width: 100%;
+                padding: 10px;
+                border-color: #8A92AB;
+                border-style: solid;
+                border-width: 1px 1px 1px 0;
+            }
+
+            .right-border2 {
+                width: 100%;
+                padding: 10px 30px 10px 10px;
+                border-color: #8A92AB;
+                border-style: solid;
+                border-width: 1px 0 1px 1px;
             }
         }
+    }
+}
+.show{
+    transform: translateY(0);
+    .footfixedbtn{
+        transform: rotate(0deg);
     }
 }

@@ -924,9 +924,9 @@ select {
 	&::before {
 		position: absolute;
 		content: '';
-		width: 1px;
+		width: 2px;
 		height: 29px;
-		background-color: rgb(var(--s2));
+		background-color: #8A92AB;
 	}
 
 	&.lg::before {
@@ -1106,7 +1106,7 @@ iframe {
 
 // Custom Dropdown 
 *::-webkit-scrollbar-track {
-	background: rgba(var(--n5), 1);
+	background: rgba(var(--n4), 1);
 }
 
 *::-webkit-scrollbar {
@@ -1115,7 +1115,7 @@ iframe {
 
 *::-webkit-scrollbar-button,
 *::-webkit-scrollbar-thumb {
-	background: rgba(var(--s2), 1);
+	background: rgba(var(--n2), 1);
 }
 
 .cus-scrollbar {
@@ -1291,50 +1291,51 @@ iframe {
 }
 
 // Custom Tabs
-.singleTab {
-	.nav-links {
-		cursor: pointer;
-	}
 
-	.tabContents {
-		position: relative;
+// .singleTab {
+// 	.nav-links {
+// 		cursor: pointer;
+// 	}
 
-		.tabItem {
-			transform: translateY(100px);
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			width: 100%;
-			opacity: 0;
-			transition: 0.8s all;
+// 	.tabContents {
+// 		position: relative;
 
-			&.active {
-				position: initial;
-				z-index: 1;
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-	}
+// 		.tabItem {
+// 			transform: translateY(100px);
+// 			position: absolute;
+// 			z-index: -1;
+// 			top: 0;
+// 			width: 100%;
+// 			opacity: 0;
+// 			transition: 0.8s all;
 
-	&.pros-cros {
-		.nav-item {
-			border-radius: unset;
-			background: rgba(12, 169, 64, 0.70);
-			font-weight: 700;
-			color: rgba(var(--p2));
+// 			&.active {
+// 				position: initial;
+// 				z-index: 1;
+// 				opacity: 1;
+// 				transform: translateY(0);
+// 			}
+// 		}
+// 	}
 
-			.active {
-				background: rgba(var(--p1));
-			}
+// 	&.pros-cros {
+// 		.nav-item {
+// 			border-radius: unset;
+// 			background: rgba(12, 169, 64, 0.70);
+// 			font-weight: 700;
+// 			color: rgba(var(--n7));
 
-			button {
-				color: rgb(var(--p2-fixed));
-				transition: var(--transition);
-			}
-		}
-	}
-}
+// 			.active {
+// 				background: rgba(var(--n7));
+// 			}
+
+// 			button {
+// 				color: rgb(var(--n7));
+// 				transition: var(--transition);
+// 			}
+// 		}
+// 	}
+// }
 
 // Search section
 .search-area {
