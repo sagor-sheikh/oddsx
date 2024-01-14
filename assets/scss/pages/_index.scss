@@ -57,10 +57,10 @@
 // Top Matches Section Starts
 .top_matches {
     &__main {
-        margin: 30px 20px 0 303px;
+        margin: 30px 0 0 303px;
 
         @include maxQuery(991) {
-            margin: 0;
+            margin-left: 12px;
             // padding-top: 120px;
         }
     }
@@ -68,8 +68,9 @@
     &__content {
         .tabcontents {
             position: relative;
-          }
-          .tabitem {
+        }
+
+        .tabitem {
             transform: translateY(100px);
             position: absolute;
             z-index: -1;
@@ -77,13 +78,87 @@
             width: 100%;
             opacity: 0;
             transition: 0.5s all;
-          }
-          .tabitem.active {
+        }
+
+        .tabitem.active {
             position: initial;
             z-index: 1;
             opacity: 1;
             transform: translateY(0);
-          }
+        }
+
+        .tablink {
+            transition: 0.5s linear;
+            border: 1px solid rgb(var(--p3));
+
+            &:hover {
+                border: 1px solid rgb(var(--g1));
+            }
+        }
+
+        .nav-links {
+            .active {
+                border: 1px solid rgb(var(--g1));
+            }
+        }
+    }
+
+    &__cmncard {
+        table {
+
+            th,
+            td {
+                color: rgb(var(--n7));
+            }
+
+            thead {
+                border-bottom: 1px solid #2C3655;
+                padding-bottom: 16px;
+
+                tr {
+                    th {
+                        padding-bottom: 16px;
+
+                    }
+                }
+            }
+        }
+
+        &-countcercle {
+            padding: 6px 8px;
+            border: 1px solid #0F1B42;
+            background: rgba(15, 27, 66, 0.30);
+        }
+        &-right{
+            border-bottom: 1px solid #2C3655;
+        }
+    }
+    &__innercount{
+        &-item{
+            transition: 0.5s linear;
+            cursor: pointer;
+            // &:hover{
+            //     background-color: rgb(var(--g1));
+            // }
+        }
+        .active{
+            background-color: rgb(var(--g1));
+        }
+    }
+    &__clubdata{
+        .table-responsive{
+            &::-webkit-scrollbar {
+                height: 0;
+            }
+
+            margin-top: -12px;
+            @include maxQuery(1307){
+                margin-top: -13px;
+            }
+            @include maxQuery(1199){
+                margin-top: 0;
+            }
+        }
     }
 }
 

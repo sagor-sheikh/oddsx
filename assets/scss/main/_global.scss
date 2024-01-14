@@ -930,7 +930,9 @@ select {
 	}
 
 	&.lg::before {
-		height: 15px;
+		width: 1px;
+		height: 50px;
+		top: 15%;
 	}
 
 	&.lgx::before {
