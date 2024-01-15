@@ -573,5 +573,10 @@ document.addEventListener("DOMContentLoaded", function () {
       $('.clickable-active').removeClass('active');
       $(this).addClass('active');
     });
+    // active any class 
+    $('.clickable-active2').click(function () {
+      $('.clickable-active2').removeClass('active');
+      $(this).addClass('active');
+    });
   });
 });

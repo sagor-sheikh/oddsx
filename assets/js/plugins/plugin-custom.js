@@ -51,6 +51,41 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
+        let consulMonthCarousel3 = document.querySelector('.live-playing2');
+        if (consulMonthCarousel3) {
+            const swiper = new Swiper(consulMonthCarousel3, {
+                loop: 1,
+                speed: 5000,
+                autoplay: {
+                    delay: false,
+                    disableOnInteraction: false,
+                },
+                spaceBetween: 24,
+                slidesPerView: 1,
+                paginationClickable: true,
+                breakpoints: {
+                    1799: {
+                        slidesPerView: 4,
+                    },
+                    1499: {
+                        slidesPerView: 3,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                    },
+                    575: {
+                        slidesPerView: 2,
+                    },
+                    480: {
+                        slidesPerView: 1.5,
+                    },
+                    375: {
+                        slidesPerView: 1,
+                    },
+                }
+            });
+        }
+
         /* niceSelect */
         $("select").niceSelect();
 

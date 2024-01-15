@@ -3062,6 +3062,10 @@ input[type=radio] {
   justify-content: center;
   border: 1px solid rgb(var(--n2));
 }
+.hero_area__topslider-scr span {
+  border: 1px solid rgba(53, 195, 30, 0.5);
+  color: rgba(53, 195, 30, 0.5);
+}
 .hero_area__topslider-cfitem {
   border-radius: 4px;
   transition: 0.5s linear;
@@ -3133,7 +3137,8 @@ input[type=radio] {
   background-color: rgb(var(--g1));
 }
 .top_matches__clubdata .table-responsive {
-  margin-top: -12px;
+  width: 100%;
+  margin-top: -13px;
 }
 .top_matches__clubdata .table-responsive::-webkit-scrollbar {
   height: 0;
@@ -3147,4 +3152,36 @@ input[type=radio] {
   .top_matches__clubdata .table-responsive {
     margin-top: 0;
   }
+}
+.top_matches__clubdata .maintain {
+  margin-top: -13px;
+}
+@media (max-width: 1760px) {
+  .top_matches__clubdata .maintain {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 1299px) {
+  .top_matches__clubdata .maintain {
+    margin-top: -13px;
+  }
+}
+.top_matches__clubdata .maintaintwo {
+  margin-top: -12px;
+}
+@media (max-width: 1760px) {
+  .top_matches__clubdata .maintaintwo {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 1299px) {
+  .top_matches__clubdata .maintaintwo {
+    margin-top: -13px;
+  }
+}
+
+.live-playing2 .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }/*# sourceMappingURL=style.css.map */
