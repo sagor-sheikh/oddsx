@@ -247,7 +247,20 @@ select {
 .pb120 {
 	padding-bottom: 120px;
 }
-
+.pt80 {
+	padding-top: 80px;
+}
+.pb80 {
+	padding-bottom: 80px;
+}
+@include maxQuery(991){
+	.pt80 {
+		padding-top: 40px;
+	}
+	.pb80 {
+		padding-bottom: 40px;
+	}
+}
 .ml-316 {
 	margin-left: 316px;
 

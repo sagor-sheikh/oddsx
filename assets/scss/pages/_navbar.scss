@@ -560,11 +560,11 @@
     .nav_aside {
         // max-height: 100vh;
         overflow: auto;
-        height: calc(98vh - 100px);
+        height: calc(103vh - 100px);
         overflow-y: auto;
         transition: 0.3s linear;
         // margin-top: 34px;
-        padding-top: 20px;
+        // padding-top: 20px;
 
         @include maxQuery(991) {
             transform: translate(-100%);
@@ -1224,4 +1224,10 @@
             visibility: visible;
         }
     }
+}
+.middle-iconfixed{
+    z-index: 5 !important;
+    background-color: rgb(var(--g1)) !important;
+    border-radius: 0 7px 7px 0;
+
 }

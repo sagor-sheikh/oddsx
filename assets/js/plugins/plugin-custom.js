@@ -70,8 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     1499: {
                         slidesPerView: 3,
                     },
-                    991: {
+                    1199: {
                         slidesPerView: 3,
+                    },
+                    991: {
+                        slidesPerView: 2,
                     },
                     575: {
                         slidesPerView: 2,
@@ -85,6 +88,49 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         }
+
+        // Foooter Brand Sliders Starts
+        let brandConsul = document.querySelector('.brand-slider');
+        if (brandConsul) {
+            const swiper = new Swiper(brandConsul, {
+                loop: 50,
+                speed: 2000,
+                autoplay: {
+                    delay: false,
+                    disableOnInteraction: false,
+                },
+                spaceBetween: 24,
+                slidesPerView: 3,
+                paginationClickable: true,
+                breakpoints: {
+                    1799: {
+                        slidesPerView: 15,
+                    },
+                    1499: {
+                        slidesPerView: 13,
+                    },
+                    1199: {
+                        slidesPerView: 10,
+                    },
+                    991: {
+                        slidesPerView: 8,
+                    },
+                    768: {
+                        slidesPerView: 7,
+                    },
+                    575: {
+                        slidesPerView: 5,
+                    },
+                    480: {
+                        slidesPerView: 4,
+                    },
+                    375: {
+                        slidesPerView: 4,
+                    },
+                }
+            });
+        }
+        // Foooter Brand Sliders Ends
 
         /* niceSelect */
         $("select").niceSelect();
