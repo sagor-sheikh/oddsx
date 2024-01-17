@@ -2508,7 +2508,7 @@ input[type=radio] {
   padding-right: 15px;
 }
 .header-section .navbar .navbar-nav li a:hover {
-  border-bottom: 1px solid rgba(var(--s2), 1);
+  border-bottom: 1px solid rgba(var(--n8), 1);
 }
 .header-section .navbar .navbar-nav a,
 .header-section .navbar .navbar-nav button {
@@ -2524,7 +2524,7 @@ input[type=radio] {
 .header-section .navbar .navbar-nav a.active, .header-section .navbar .navbar-nav a:hover,
 .header-section .navbar .navbar-nav button.active,
 .header-section .navbar .navbar-nav button:hover {
-  color: rgba(var(--s2), 1);
+  color: rgba(var(--n8), 1);
 }
 .header-section .navbar .navbar-nav a.active::before, .header-section .navbar .navbar-nav a:hover::before,
 .header-section .navbar .navbar-nav button.active::before,
@@ -3021,6 +3021,12 @@ input[type=radio] {
   left: calc(100% - 1px);
   transform: translateX(-100%);
 }
+@media (max-width: 768px) {
+  .fixed_footer__content {
+    overflow-y: scroll;
+    height: 400px;
+  }
+}
 .fixed_footer__content .box {
   border-radius: 3px;
   overflow: hidden;
@@ -3275,6 +3281,14 @@ input[type=radio] {
 @media (max-width: 1299px) {
   .top_matches__clubdata .maintaintwo {
     margin-top: -13px;
+  }
+}
+.top_matches__clubdatatwo {
+  width: 65%;
+}
+@media (max-width: 1499px) {
+  .top_matches__clubdatatwo {
+    width: 100%;
   }
 }
 

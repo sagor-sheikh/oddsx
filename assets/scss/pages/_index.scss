@@ -183,6 +183,12 @@
             }
         }
     }
+    &__clubdatatwo{
+        width: 65%;
+        @include maxQuery(1499){
+            width: 100%;
+        };
+    }
 }
 .live-playing2 .swiper-wrapper {
     -webkit-transition-timing-function: linear !important;
