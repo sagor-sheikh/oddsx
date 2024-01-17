@@ -1107,7 +1107,7 @@ select {
 .v-line.lg::before {
   width: 1px;
   height: 50px;
-  top: 15%;
+  top: 6%;
 }
 .v-line.lgx::before {
   height: 15px;
