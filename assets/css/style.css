@@ -798,6 +798,10 @@ select {
   border: 1px solid #2C3655;
 }
 
+.rounded-8 {
+  border-radius: 8px;
+}
+
 .rounded-17 {
   border-radius: 17px;
 }
@@ -3121,6 +3125,41 @@ input[type=radio] {
 }
 .show .footfixedbtn {
   transform: rotate(0deg);
+}
+
+.pay_method__paymethod-item {
+  border: 1px solid rgb(var(--n2));
+  transition: 0.5s linear;
+}
+.pay_method__paymethod-item:hover {
+  border: 1px solid rgb(var(--g1));
+}
+.pay_method .tabcontents {
+  position: relative;
+}
+.pay_method .tabitem {
+  transform: translateY(100px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s all;
+}
+.pay_method .nav-links.active {
+  background-color: rgba(var(--n11), 1);
+}
+.pay_method .nav-links {
+  transition: 0.5s linear;
+}
+.pay_method .nav-links:hover {
+  background-color: rgba(var(--n11), 1);
+}
+.pay_method .tabitem.active {
+  position: initial;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero_area__main {

@@ -1,0 +1,40 @@
+// Deposit Dashboard Starts
+.pay_method{
+    &__paymethod{
+        &-item{
+            border: 1px solid rgb(var(--n2));
+            transition: 0.5s linear;
+            &:hover{
+                border: 1px solid rgb(var(--g1));
+            }
+        }
+    }
+    .tabcontents {
+        position: relative;
+      }
+      .tabitem {
+        transform: translateY(100px);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s all;
+      }
+      .nav-links.active{
+        background-color: rgba(var(--n11), 1);
+      }
+      .nav-links{
+        transition: 0.5s linear;
+        &:hover{
+            background-color: rgba(var(--n11), 1);
+        }
+      }
+      .tabitem.active {
+        position: initial;
+        z-index: 1;
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+// Deposit Dashboard Ends
