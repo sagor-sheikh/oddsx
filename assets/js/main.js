@@ -573,9 +573,22 @@ document.addEventListener("DOMContentLoaded", function () {
       $('.clickable-active').removeClass('active');
       $(this).addClass('active');
     });
+
     // active any class 
     $('.clickable-active2').click(function () {
       $('.clickable-active2').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Payment methods
+    $('.pay-methods').click(function () {
+      $('.pay-methods').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Payment methods
+    $('.amount-active').click(function () {
+      $('.amount-active').removeClass('active');
       $(this).addClass('active');
     });
   });

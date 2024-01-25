@@ -1114,8 +1114,9 @@ select {
   top: 6%;
 }
 .v-line.lgx::before {
-  height: 15px;
-  background-color: var(--px) !important;
+  width: 1px;
+  height: 51px;
+  background-color: #2C3655;
 }
 .v-line.lg2::before {
   height: 17px;
@@ -3165,6 +3166,13 @@ input[type=radio] {
 }
 .pay_method__paymethod-item:hover {
   border: 1px solid rgb(var(--g1));
+}
+.pay_method__paymethod .active {
+  border: 1px solid rgb(var(--g1));
+}
+.pay_method__amount {
+  border-radius: 8px;
+  border: 1px solid rgb(var(--n2));
 }
 @media (max-width: 1399px) {
   .pay_method__scrol {
