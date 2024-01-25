@@ -3127,12 +3127,65 @@ input[type=radio] {
   transform: rotate(0deg);
 }
 
+@media (max-width: 1599px) {
+  .pay_method__paymethod-items {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1399px) {
+  .pay_method__paymethod-items {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 1299px) {
+  .pay_method__paymethod-items {
+    flex-wrap: wrap;
+  }
+}
 .pay_method__paymethod-item {
   border: 1px solid rgb(var(--n2));
   transition: 0.5s linear;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1599px) {
+  .pay_method__paymethod-item {
+    width: fit-content;
+  }
+}
+@media (max-width: 1399px) {
+  .pay_method__paymethod-item {
+    width: 100%;
+  }
+}
+@media (max-width: 1299px) {
+  .pay_method__paymethod-item {
+    width: fit-content;
+  }
 }
 .pay_method__paymethod-item:hover {
   border: 1px solid rgb(var(--g1));
+}
+@media (max-width: 1399px) {
+  .pay_method__scrol {
+    overflow-x: scroll;
+  }
+  .pay_method__scrol::-webkit-scrollbar {
+    height: 0;
+  }
+}
+@media (max-width: 1399px) {
+  .pay_method__scrollbar {
+    width: fit-content;
+  }
+}
+.pay_method__formarea form i {
+  color: rgba(var(--n5), 1);
+  cursor: pointer;
+}
+.pay_method__formarea form input::placeholder {
+  color: rgba(var(--n5), 1);
+  font-size: 14px;
 }
 .pay_method .tabcontents {
   position: relative;
@@ -3151,6 +3204,12 @@ input[type=radio] {
 }
 .pay_method .nav-links {
   transition: 0.5s linear;
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  .pay_method .nav-links {
+    width: fit-content;
+  }
 }
 .pay_method .nav-links:hover {
   background-color: rgba(var(--n11), 1);

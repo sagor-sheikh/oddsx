@@ -1,40 +1,105 @@
 // Deposit Dashboard Starts
-.pay_method{
-    &__paymethod{
-        &-item{
-            border: 1px solid rgb(var(--n2));
-            transition: 0.5s linear;
-            &:hover{
-                border: 1px solid rgb(var(--g1));
-            }
-        }
+.pay_method {
+  &__paymethod {
+    &-items{
+      @include maxQuery(1599){
+        flex-wrap: wrap;
+      }
+      @include maxQuery(1399){
+        flex-wrap: nowrap;
+      }
+      @include maxQuery(1299){
+        flex-wrap: wrap;
+      }
     }
-    .tabcontents {
-        position: relative;
+
+    &-item {
+      border: 1px solid rgb(var(--n2));
+      transition: 0.5s linear;
+      width: 100%;
+      height: 100%;
+      @include maxQuery(1599){
+        width: fit-content;
       }
-      .tabitem {
-        transform: translateY(100px);
-        position: absolute;
-        z-index: -1;
-        top: 0;
+      @include maxQuery(1399){
         width: 100%;
-        opacity: 0;
-        transition: 0.5s all;
       }
-      .nav-links.active{
-        background-color: rgba(var(--n11), 1);
+      @include maxQuery(1299){
+        width: fit-content;
       }
-      .nav-links{
-        transition: 0.5s linear;
-        &:hover{
-            background-color: rgba(var(--n11), 1);
+      &:hover {
+        border: 1px solid rgb(var(--g1));
+      }
+    }
+  }
+
+  &__scrol {
+    @include maxQuery(1399) {
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+  }
+
+  &__scrollbar {
+    @include maxQuery(1399) {
+      width: fit-content;
+    }
+  }
+  &__formarea{
+    form{
+      i{
+        color: rgba(var(--n5), 1);
+        cursor: pointer;
+      }
+      input{
+        &::placeholder{
+          color: rgba(var(--n5), 1);
+          font-size: 14px;
         }
       }
-      .tabitem.active {
-        position: initial;
-        z-index: 1;
-        opacity: 1;
-        transform: translateY(0);
-      }
+    }
+  }
+
+  .tabcontents {
+    position: relative;
+  }
+
+  .tabitem {
+    transform: translateY(100px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s all;
+  }
+
+  .nav-links.active {
+    background-color: rgba(var(--n11), 1);
+  }
+
+  .nav-links {
+    transition: 0.5s linear;
+    width: 100%;
+
+    @include maxQuery(1399) {
+      width: fit-content;
+    }
+
+    &:hover {
+      background-color: rgba(var(--n11), 1);
+    }
+  }
+
+  .tabitem.active {
+    position: initial;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 // Deposit Dashboard Ends
