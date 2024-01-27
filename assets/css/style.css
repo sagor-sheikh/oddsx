@@ -3195,6 +3195,91 @@ input[type=radio] {
   color: rgba(var(--n5), 1);
   font-size: 14px;
 }
+.pay_method__table-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.pay_method__table-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #35C31E;
+  border-radius: 2px;
+}
+.pay_method__table-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.pay_method__table table {
+  border-radius: 10px;
+}
+.pay_method__table table tr th {
+  background-color: rgb(var(--n11));
+}
+.pay_method__table table tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.pay_method__table table tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.pay_method__table table tr td,
+.pay_method__table table tr th {
+  padding: 20px 90px;
+  box-shadow: 0px 1px 0px 0px #65739C, 0px 1px 0px 0px #212534;
+}
+.pay_method__table table tr td {
+  font-size: 14px;
+}
+.pay_method__tabletwo-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.pay_method__tabletwo-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #35C31E;
+  border-radius: 2px;
+}
+.pay_method__tabletwo-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.pay_method__tabletwo table {
+  border-radius: 10px;
+}
+.pay_method__tabletwo table tr th {
+  background-color: rgb(var(--n11));
+}
+.pay_method__tabletwo table tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.pay_method__tabletwo table tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.pay_method__tabletwo table tr td,
+.pay_method__tabletwo table tr th {
+  padding: 20px 40px;
+  box-shadow: 0px 1px 0px 0px #65739C, 0px 1px 0px 0px #212534;
+}
+.pay_method__tabletwo table tr td {
+  font-size: 14px;
+}
+.pay_method .nice-select {
+  background-color: rgb(var(--n11));
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+.pay_method .nice-select .current {
+  font-size: 14px;
+  color: #BDC2D1;
+}
+.pay_method .nice-select.open .list {
+  background-color: rgb(var(--n11));
+}
+.pay_method .nice-select ul {
+  border: none;
+  padding: 16px;
+  background-color: rgb(var(--n11));
+}
+.pay_method .nice-select ul li {
+  font-size: 14px;
+  color: #BDC2D1;
+}
+.pay_method .nice-select::after {
+  border-color: #A098AE;
+}
 .pay_method .tabcontents {
   position: relative;
 }
