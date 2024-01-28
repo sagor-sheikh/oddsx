@@ -20,8 +20,9 @@
 
 <body>
     <!-- Scroll To Top Start-->
-    <button class="scrollToTop d-none d-md-flex d-center" aria-label="scroll Bar Button"><i
-            class="mat-icon fas fa-angle-double-up"></i></button>
+    <button class="scrollToTop d-none d-md-flex d-center" aria-label="scroll Bar Button">
+        <i class="mat-icon fas fa-angle-double-up"></i>
+        </button>
     <!-- Scroll To Top End -->
 
     <!-- Start Custom Cursor -->
@@ -108,64 +109,214 @@
                         <i class="ti ti-gift fs-four"></i>
                         <span class="fs-eight g1-bg px-1 rounded-5 position-absolute end-0 top-0">2</span>
                     </button>
-                    <div class="single-item cart-area search-area">
+                    <div class="cart-area search-area">
                         <div class="cmn-head">
                             <button type="button" aria-label="Shopping Button"
                                 class="common_toggles2 py-1 px-2 n11-bg rounded-5 position-relative">
                                 <i class="slide-toggle2 ti ti-message-dots fs-four"></i>
                                 <span class="fs-eight g1-bg px-1 rounded-5 position-absolute end-0 top-0">2</span>
                             </button>
-                            <div class="msg_area common_area2 p2-bg p-5 rounded-2">
-                                <h5 class="mb-7 mb-md-8">Messages</h5>
-                                <div class="msg_item d-flex align-items-center gap-2 mb-7">
-                                    <div class="msg_item_thumb">
-                                        <img src="assets/images/head-msg-1.png" class="rounded-4 max-un" alt="Images">
+                            <div class="cmns_msgarea msg_area common_area2 p2-bg rounded-2">
+                                <div class="cmns_msgarea__head d-flex align-items-center justify-content-between gap-5 n11-bg px-6 py-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <button type="button"><i class="ti ti-menu-2 fs-four n5-color"></i></button>
+                                        <h5 class="fs-five">Chat</h5>
                                     </div>
-                                    <div class="msg_item-content">
-                                        <div class="msg_item-name d-flex align-items-center gap-2">
-                                            <span>Piter Maio</span>
-                                            <span class="s2-bg p2-color fw_500 px-1 rounded-20 fs-eight">3</span>
+                                    <div class="common_toggles3">
+                                        <i class="ti ti-x fs-four cpoint n5-color"></i>
+                                    </div>
+                                </div>
+                                <div class="cmns_msgarea__body p-5 p-md-6">
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/flores.png" alt="Icon">
                                         </div>
-                                        <p class="p1-color">Amet minim mollit non....</p>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Flores, Juanita</h6>
+                                                <span class="n3-color seven">Dec 30 21:28</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/miles.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Miles, Esther</h6>
+                                                <span class="n3-color seven">Aug 15 10:29</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/nguyen.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Nguyen, Shane</h6>
+                                                <span class="n3-color seven">Apr 11 18:30</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/cooper.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Cooper, Kristin</h6>
+                                                <span class="n3-color seven">Apr 11 18:30</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/miles.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Miles, Esther</h6>
+                                                <span class="n3-color seven">May 22 04:43</span>
+                                            </div>
+                                            <p class="mb-2">Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                            <img src="assets/images/etiam-consequat.png" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/henry-arthur.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Nguyen, Shane</h6>
+                                                <span class="n3-color seven">Jul 25 17:09</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/nguyen.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Henry, Arthur</h6>
+                                                <span class="n3-color seven">Sep 4 06:53</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/henry-arthur.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Henry, Arthur</h6>
+                                                <span class="n3-color seven">May 22 04:43</span>
+                                            </div>
+                                            <p class="mb-2">Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                            <img src="assets/images/etiam-sem.png" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/flores.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Flores, Juanita</h6>
+                                                <span class="n3-color seven">Jul 25 17:09</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/henry-arthur.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Nguyen, Shane</h6>
+                                                <span class="n3-color seven">Jul 25 17:09</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/nguyen.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Henry, Arthur</h6>
+                                                <span class="n3-color seven">May 22 04:43</span>
+                                            </div>
+                                            <p class="mb-2">Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                            <img src="assets/images/convallis.png" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/discot.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Nguyen, Shane</h6>
+                                                <span class="n3-color seven">Jul 25 17:09</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/henry-arthur.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Black, Marvin</h6>
+                                                <span class="n3-color seven">Jun 23 14:31</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <div class="cmns_msgarea__head-thumb">
+                                            <img class="rounded-5" src="assets/images/flores.png" alt="Icon">
+                                        </div>
+                                        <div class="cmns_msgarea__head-conent">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <h6>Flores, Juanita</h6>
+                                                <span class="n3-color seven">Jan 31 09:53</span>
+                                            </div>
+                                            <p>Etiam consequat tellus sem, eget ullamcorper arcu convallis eu.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="msg_item d-flex align-items-center gap-2 mb-7">
-                                    <div class="msg_item_thumb">
-                                        <img src="assets/images/head-msg-2.png" class="rounded-4 max-un" alt="Images">
-                                    </div>
-                                    <div class="msg_item-content">
-                                        <span>Annette Black</span>
-                                        <p class="s9-color">You: consequat sunt</p>
-                                    </div>
+                                <div class="cmns_msgarea__footer py-4 py-md-5 px-5 px-md-6 position-absolute bottom-0 n11-bg w-100">
+                                    <form class="d-flex">
+                                        <div class="cmns_msgarea__footer-fileup d-flex align-items-center">
+                                            <input type="text" placeholder="Send message">
+                                            <label for="img">
+                                                <i class="ti ti-photo-plus fs-four cpoint"></i>
+                                            </label>
+                                            <input class="d-none" type="file" id="img">
+                                            <span><i class="ti ti-at fs-four cpoint"></i></span>
+                                            <label for="pdf">
+                                                <i class="ti ti-file-type-pdf fs-four cpoint"></i>
+                                            </label>
+                                            <input class="d-none" type="file" id="pdf">
+                                            <span><i class="ti ti-mood-happy fs-four cpoint"></i></span>
+                                        </div>
+                                        <button class="py-3 px-5 g1-bg rounded-8"><i class="ti ti-send fs-four"></i></button>
+                                    </form>
                                 </div>
-                                <div class="msg_item d-flex align-items-center gap-2 mb-7">
-                                    <div class="msg_item_thumb">
-                                        <img src="assets/images/head-msg-3.png" class="rounded-4 max-un" alt="Images">
-                                    </div>
-                                    <div class="msg_item-content">
-                                        <span>Ralph Edwards</span>
-                                        <p class="p1-color">Amet minim mollit non....</p>
-                                    </div>
-                                </div>
-                                <div class="msg_item d-flex align-items-center gap-2 mb-7">
-                                    <div class="msg_item_thumb">
-                                        <img src="assets/images/head-msg-4.png" class="rounded-4 max-un" alt="Images">
-                                    </div>
-                                    <div class="msg_item-content">
-                                        <span>Darrell Steward</span>
-                                        <p class="s9-color">You: consequat sunt</p>
-                                    </div>
-                                </div>
-                                <div class="msg_item d-flex align-items-center gap-2 mb-7">
-                                    <div class="msg_item_thumb">
-                                        <img src="assets/images/head-msg-5.png" class="rounded-4 max-un" alt="Images">
-                                    </div>
-                                    <div class="msg_item-content">
-                                        <span>Wade Warren</span>
-                                        <p class="s9-color">You: consequat sunt</p>
-                                    </div>
-                                </div>
-                                <a href="chat.html" class="p1-color fw_500">See all inbox</a>
                             </div>
                         </div>
                     </div>
