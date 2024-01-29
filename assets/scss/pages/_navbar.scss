@@ -694,14 +694,15 @@
 }
 
 .cmns_msgarea {
-    height: 80vh;
+    min-height: 88vh;
     overflow: hidden;
-
+    @include maxQuery(575){
+        min-height: 99vh;
+    }
     &__body {
         height: 75vh !important;
         overflow-y: scroll;
     }
-
     &__footer {
         &-fileup {
             border-radius: 10px;

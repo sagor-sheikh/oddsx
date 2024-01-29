@@ -2236,8 +2236,13 @@ input[type=radio] {
 }
 
 .cmns_msgarea {
-  height: 80vh;
+  min-height: 88vh;
   overflow: hidden;
+}
+@media (max-width: 575px) {
+  .cmns_msgarea {
+    min-height: 99vh;
+  }
 }
 .cmns_msgarea__body {
   height: 75vh !important;
