@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //   $("#preloader").css("display", "none");
     // });
 
+    setTimeout(function(){
+      $('body').addClass('loaded');
+    }, 1000);
 
     // Click to Scroll Top
     // var ScrollTop = $(".scrollToTop");
