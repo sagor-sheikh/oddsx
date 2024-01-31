@@ -1314,13 +1314,13 @@ iframe {
 
 .scrollToTop {
   position: fixed;
-  bottom: 0;
+  bottom: 170px;
   width: 40px;
   height: 40px;
-  right: 30px;
-  background-color: rgba(var(--s2), 1);
+  right: 60px;
+  background-color: rgba(var(--g1), 1);
   padding: 0 12px;
-  color: rgba(var(--p2), 1);
+  color: rgba(var(--n7), 1);
   line-height: 120%;
   font-size: 12px;
   border-radius: 5px;
@@ -2375,6 +2375,9 @@ input[type=radio] {
 .header-section .navbar .navbar-nav ul {
   padding: 10px 0;
   padding-right: 15px;
+}
+.header-section .navbar .navbar-nav li .active {
+  border-bottom: 1px solid rgba(var(--g1), 1);
 }
 .header-section .navbar .navbar-nav li a:hover {
   border-bottom: 1px solid rgba(var(--n8), 1);

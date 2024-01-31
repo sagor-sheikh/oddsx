@@ -565,8 +565,6 @@ select {
 		border: 3px solid #35C31E ;
 	}
 
-
-
 	&.second-alt {
 		background-color: rgb(var(--p1));
 		border: 3px solid #35C31E;
@@ -1234,13 +1232,13 @@ iframe {
 // Scroll To Top 
 .scrollToTop {
 	position: fixed;
-	bottom: 0;
+	bottom: 170px;
 	width: 40px;
 	height: 40px;
-	right: 30px;
-	background-color: rgba(var(--s2), 1);
+	right: 60px;
+	background-color: rgba(var(--g1), 1);
 	padding: 0 12px;
-	color: rgba(var(--p2), 1);
+	color: rgba(var(--n7), 1);
 	line-height: 120%;
 	font-size: 12px;
 	border-radius: 5px;
@@ -1249,18 +1247,14 @@ iframe {
 	cursor: pointer;
 	transition: all 1s;
 	transform: translateY(100%);
-
 	i {
 		transition: 0.3s linear;
 	}
-
 	&.active {
 		bottom: 30px;
 		transform: translateY(0%);
 	}
-
 	&:hover {
-
 		i {
 			margin-bottom: 7px;
 		}
