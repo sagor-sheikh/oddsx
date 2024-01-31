@@ -380,3 +380,21 @@
   }
 }
 // Deposit Dashboard Ends
+// Create account page and Login page starts
+.login_section{
+  &__social{
+    a{
+      &:hover{
+        background-color: rgb(var(--g1));
+      }
+    }
+  }
+  &__form{
+    input{
+      &::placeholder{
+        color: rgb(var(--n5));
+      }
+    }
+  }
+}
+// Create account page and Login page starts

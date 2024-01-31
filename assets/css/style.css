@@ -863,8 +863,7 @@ select {
 .cmn-btn {
   padding: 10px 20px;
   background-color: #35C31E;
-  outline: 3px #35C31E solid;
-  outline-offset: -3px;
+  border: 3px solid #35C31E !important;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -876,14 +875,16 @@ select {
   background-color: transparent;
   color: rgba(var(--n8), 1);
   transition: 0.5s linear;
+  border: 3px solid #35C31E;
 }
 .cmn-btn.second-alt {
   background-color: rgb(var(--p1));
-  outline: 3px rgb(var(--p1)) solid;
+  border: 3px solid #35C31E;
 }
 .cmn-btn.second-alt:hover {
   color: rgba(var(--n8), 1);
-  outline: 3px #35C31E solid;
+  background: #35C31E;
+  border: 3px solid #35C31E;
 }
 .cmn-btn.third-alt {
   background-color: rgb(var(--p1));
@@ -3255,6 +3256,13 @@ input[type=radio] {
   z-index: 1;
   opacity: 1;
   transform: translateY(0);
+}
+
+.login_section__social a:hover {
+  background-color: rgb(var(--g1));
+}
+.login_section__form input::placeholder {
+  color: rgb(var(--n5));
 }
 
 .hero_area__main {
