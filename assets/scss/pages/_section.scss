@@ -1,5 +1,17 @@
 // Promotion page starts
 .Promotions{
+  &__main {
+    margin: 137px 20px 0 303px;
+
+    @include maxQuery(1399) {
+        // padding-top: 60px;
+    }
+
+    @include maxQuery(991) {
+      margin: 0 0 0 20px;
+        padding-top: 120px;
+    }
+}
   &__card{
     transition: 0.5s linear;
     height: 100%;

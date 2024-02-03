@@ -1,7 +1,7 @@
 /*============================================ 
 # Template Name: Oddsx
 # Version: 1.0
-# Date: 25-10-2023
+# Date: 02-03-2024
 # Author: 
 # Author URI: 
 # Description: Oddsx Sports Betting Website HTML Template
@@ -19,13 +19,9 @@
 @import "../css/bootstrap.min.css";
 @import "../css/plugins/fontawesome.min.css";
 @import "../css/plugins/nice-select.css";
-@import "../css/plugins/magnific-popup.css";
 @import "../css/plugins/swiper.min.css";
 @import "../css/plugins/jquery-ui-min.css";
-@import "../css/plugins/odometer-min.css";
 @import "../css/plugins/materialicons.css";
-@import "../css/plugins/animate.css";
-@import "../css/plugins/quill.snow.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css");
 :root {
@@ -51,22 +47,6 @@
   --n11: 15, 27, 66;
   --g1: 53, 195, 30;
   --r1: 255, 72, 0;
-  --p1u: #000616;
-  --p2u: #080F25;
-  --p3u: #0D1322;
-  --n1u: #0A1023;
-  --n2u: #2C3655;
-  --n3u: #848894;
-  --n4u: #959AAA;
-  --n5u: #BDC2D1;
-  --n6u: #212C4D;
-  --n7u: #F8F8F8;
-  --n8u: #FFFFFF;
-  --n9u: #F5FAFF;
-  --n10u: #EEF1FF;
-  --n11u: #0F1B42;
-  --g1u: #35C31E;
-  --r1u: #FF4800;
 }
 
 .display-zero {
@@ -1953,7 +1933,7 @@ input[type=radio] {
 }
 @media (max-width: 991px) {
   .header-section2 .navbar .right-area .language-area .translate_wrapper {
-    left: -130%;
+    left: -80%;
   }
 }
 @media (max-width: 575px) {
@@ -1962,8 +1942,8 @@ input[type=radio] {
   }
 }
 @media (max-width: 480px) {
-  .header-section2 .navbar .right-area .language-area .translate_wrapper .respon-icon {
-    display: none;
+  .header-section2 .navbar .right-area .language-area .translate_wrapper {
+    width: 100px;
   }
 }
 .header-section2 .navbar .right-area .language-area .current_lang {
@@ -2234,6 +2214,9 @@ input[type=radio] {
   background-color: rgb(var(--n11));
   color: #fff;
 }
+.navigation ul li.active i {
+  opacity: 1;
+}
 .navigation ul li.active a > i,
 .navigation ul li.active span {
   color: white;
@@ -2261,13 +2244,14 @@ input[type=radio] {
   transition: 0.5s linear;
 }
 .aside_namelist li button i {
-  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s linear;
 }
 .aside_namelist li:hover {
   background-color: rgb(var(--n11));
 }
 .aside_namelist li:hover button i {
-  visibility: visible !important;
+  opacity: 1;
 }
 
 .cmns_msgarea {
@@ -2510,10 +2494,25 @@ input[type=radio] {
     top: 25%;
   }
 }
+@media (max-width: 991px) and (max-width: 991px) {
+  .header-section .navbar .custom-pos {
+    top: 20% !important;
+  }
+}
+@media (max-width: 991px) and (max-width: 768px) {
+  .header-section .navbar .custom-pos {
+    top: 15% !important;
+  }
+}
 @media (max-width: 991px) and (max-width: 575px) {
   .header-section .navbar .custom-pos {
-    right: 18%;
+    right: 48%;
     top: 10px;
+  }
+}
+@media (max-width: 991px) and (max-width: 480px) {
+  .header-section .navbar .custom-pos {
+    right: 65%;
   }
 }
 @media (max-width: 991px) {
@@ -2935,6 +2934,15 @@ input[type=radio] {
   transform: rotate(0deg);
 }
 
+.Promotions__main {
+  margin: 137px 20px 0 303px;
+}
+@media (max-width: 991px) {
+  .Promotions__main {
+    margin: 0 0 0 20px;
+    padding-top: 120px;
+  }
+}
 .Promotions__card {
   transition: 0.5s linear;
   height: 100%;
@@ -3328,7 +3336,12 @@ input[type=radio] {
 }
 @media (max-width: 991px) {
   .top_matches__main {
-    margin-left: 12px;
+    margin: 0 -10px 0 12px;
+  }
+}
+@media (max-width: 480px) {
+  .top_matches__main {
+    margin: 0 -12px 0 10px;
   }
 }
 .top_matches__content .tabcontents {

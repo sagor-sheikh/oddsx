@@ -1,8 +1,7 @@
+
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
-
   $(function ($) {
-
     setTimeout(function(){
       $('body').addClass('loaded');
     }, 1000);
@@ -400,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(window).on('unload', function () {
       observer.disconnect();
     });
-    
+
     //Custom Tab
     $(".tablinks .nav-links").each(function () {
       var targetTab = $(this).closest(".singletab");
