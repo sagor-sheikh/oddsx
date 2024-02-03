@@ -3,25 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   $(function ($) {
 
-    // preloader
-    // $("#preloader").delay(1000).animate({
-    //   "opacity": "0"
-    // }, 1000, function () {
-    //   $("#preloader").css("display", "none");
-    // });
-
     setTimeout(function(){
       $('body').addClass('loaded');
     }, 1000);
-
-    // Click to Scroll Top
-    // var ScrollTop = $(".scrollToTop");
-    // $('.scrollToTop').on('click', function () {
-    //   $('html, body').animate({
-    //     scrollTop: 0
-    //   }, 600);
-    //   return false;
-    // });
 
     // Sticky Header
     var fixed_top = $(".header-section");
@@ -31,13 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     else {
       fixed_top.removeClass("animated fadeInDown header-fixed");
     }
+
     // navbar active header 
     $(document).on('click', '.navigation ul li', function () {
       $(this).addClass('active').siblings().removeClass('active')
     })
     // Navbar add and close
-
-
 
     // mobile number
     const mobileSize = window.matchMedia("(max-width: 991px)");
@@ -66,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
     handleMediaScreen(mobileSize);
     mobileSize.addEventListener("change", handleMediaScreen);
 
-
     // Navbar Custom Menu Button 
     $('.navbar-toggler').on('click', function () {
       $(this).toggleClass('open');
@@ -88,10 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     targetClass.parents(".sub-dropdown").find("button").first().addClass('active');
     targetClass.parents(".show-dropdown").find("button").first().addClass('active');
 
-    // $("left-click").click(function(){
-    //   $("#div10").remove();
-    // });
-
     $(".left-nav-icon").on("click", function () {
       $(".nav_aside").toggleClass("show");
     });
@@ -108,21 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // window on scroll function
     $(window).on("scroll", function () {
-
-      // Sticky Header
-      // if ($(window).scrollTop() > 50) {
-      //   fixed_top.addClass("animated fadeInDown header-fixed");
-      // }
-      // else {
-      //   fixed_top.removeClass("animated fadeInDown header-fixed");
-      // }
-
-      // Check Scroll 
-      // if ($(this).scrollTop() < 600) {
-      //   ScrollTop.removeClass("active");
-      // } else {
-      //   ScrollTop.addClass("active");
-      // }
 
       // Odometer Init 
       let windowHeight = $(window).height();
@@ -177,8 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
       $(".common_area2").removeClass("show");
     });
 
-
-
     // Home page active color
     let activeElement = null;
 
@@ -189,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
       $(this).css('color', '#EC604F');
       activeElement = $(this);
     });
-
 
     // Booking bg color change
     let activeElements = null;
@@ -214,14 +174,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Close any where
     const $menu = $('.workready');
-
     $(document).mouseup(function (e) {
       if (!$menu.is(e.target)
         && $menu.has(e.target).length === 0) {
         $menu.removeClass('show');
       }
     });
-
 
     // site update
     $(".user_account").on("click", function () {
@@ -253,65 +211,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $('.reply-btn').on('click', function () {
       $(this).closest(".author__content").find(".reply-form").slideToggle();
     });
-
-    // // magnific-popup
-    // $('.popup-video').magnificPopup({
-    //   type: 'iframe'
-    // });
-    // // gridGallery
-    // $('.popup_img').magnificPopup({
-    //   type: 'image',
-    //   gallery: {
-    //     enabled: true
-    //   }
-    // });
-
-    // Audio Play Starts
-    // var audioUrl = 'https://freewavesamples.com/files/Ensoniq-ESQ-1-Piano-C3.wav';
-    // $('.play_song').click(() => new Audio(audioUrl).play());
-    // Audio Play Ends
-
-    // Coming Soon Page Count Down
-    // timer countdown
-    let custom_countdown = document.querySelector(".custom_countdown");
-
-    if (custom_countdown) {
-      const newDate = new Date('2025-09-12T23:59:59').getTime(); // Use a standard date format
-
-      const countdown = setInterval(() => {
-        const currentDate = new Date().getTime();
-        const diff = newDate - currentDate;
-
-        if (diff <= 0) {
-          clearInterval(countdown);
-          document.querySelector(".countdown").innerHTML = 'Time is up';
-          return;
-        }
-
-        const month = Math.floor(diff / (1000 * 60 * 60 * 24 * (365.25 / 12)));
-        const days = Math.floor((diff % (1000 * 60 * 60 * 24 * (365.25 / 12))) / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-        document.querySelector(".seconds").innerHTML = seconds < 10 ? '0' + seconds : seconds;
-        document.querySelector(".minutes").innerHTML = minutes < 10 ? '0' + minutes : minutes;
-        document.querySelector(".hours").innerHTML = hours < 10 ? '0' + hours : hours;
-        document.querySelector(".days").innerHTML = days < 10 ? '0' + days : days;
-        document.querySelector(".months").innerHTML = month < 10 ? '0' + month : month;
-
-        $(".secondsV1").html(seconds.toString().split('')[0]);
-        $(".secondsV2").html(seconds.toString().split('')[1]);
-        $(".minutesV1").html(minutes.toString().split('')[0]);
-        $(".minutesV2").html(minutes.toString().split('')[1]);
-        $(".hoursV1").html(hours.toString().split('')[0]);
-        $(".hoursV2").html(hours.toString().split('')[1]);
-        $(".daysV1").html(days.toString().split('')[0]);
-        $(".daysV2").html(days.toString().split('')[1]);
-        $(".monthsV1").html(month.toString().split('')[0]);
-        $(".monthsV2").html(month.toString().split('')[1]);
-      }, 1000);
-    }
 
     // Navbar Auto Active Class 
     var curUrl = $(location).attr('href');
@@ -432,36 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ];
 
-    // color switch btn
-    // const cmnThm = document.getElementsByClassName("switch-wrapper");
-    // if (cmnThm) {
-    //   var switchWrapper = $(".checkbox");
-    //   $(switchWrapper).on("click", function () {
-    //     $('html, section, footer').toggleClass('dark-ui');
-    //     setTheme(localStorage.getItem("theme"));
-    //   });
-    //   if (localStorage.getItem("theme") === "light") {
-    //     localStorage.setItem("theme", "dark");
-    //     switchWrapper.attr('checked', false);
-    //   } else {
-    //     localStorage.setItem("theme", "light");
-    //     switchWrapper.attr('checked', true);
-    //   }
-    //   setTheme(localStorage.getItem("theme"));
-    //   function setTheme(theme) {
-    //     if (theme === "light") {
-    //       $('.switch-wrapper .icon').removeClass('active');
-    //       $('.switch-wrapper .moon').addClass('active');
-    //       localStorage.setItem("theme", "dark");
-    //       $("html, section").addClass('dark-ui');
-    //     } else {
-    //       localStorage.setItem("theme", "light");
-    //       $("html, section").removeClass("dark-ui");
-    //       $('.switch-wrapper .icon').removeClass('active');
-    //       $('.switch-wrapper .sun').addClass('active');
-    //     }
-    //   }
-    // }
 
     // Current Year
     $(".currentYear").text(new Date().getFullYear());
@@ -531,25 +400,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(window).on('unload', function () {
       observer.disconnect();
     });
-
-    // custom Accordion
-    $('.accordion-single .header-area').on('click', function () {
-      if ($(this).closest(".accordion-single").hasClass("active")) {
-        $(this).closest(".accordion-single").removeClass("active");
-        $(this).next(".content-area").slideUp();
-      } else {
-        $(".accordion-single").removeClass("active");
-        $(this).closest(".accordion-single").addClass("active");
-        $(".content-area").not($(this).next(".content-area")).slideUp();
-        $(this).next(".content-area").slideToggle();
-      }
-    });
-
-    // Dropdown Active Remove
-    // $("section, .close-btn").on('click', function () {
-    //   $('.single-item').removeClass('active');
-    // });
-
+    
     //Custom Tab
     $(".tablinks .nav-links").each(function () {
       var targetTab = $(this).closest(".singletab");
