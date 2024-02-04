@@ -1916,7 +1916,7 @@ input[type=radio] {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: -30%;
+  left: -34%;
   font-size: 16px;
   background: rgb(var(--p2));
   border-radius: 4px;
@@ -2502,6 +2502,7 @@ input[type=radio] {
 @media (max-width: 991px) and (max-width: 768px) {
   .header-section .navbar .custom-pos {
     top: 15% !important;
+    right: 10%;
   }
 }
 @media (max-width: 991px) and (max-width: 575px) {
@@ -2511,6 +2512,16 @@ input[type=radio] {
   }
 }
 @media (max-width: 991px) and (max-width: 480px) {
+  .header-section .navbar .custom-pos {
+    right: 43%;
+  }
+}
+@media (max-width: 991px) and (max-width: 410px) {
+  .header-section .navbar .custom-pos {
+    right: 53%;
+  }
+}
+@media (max-width: 991px) and (max-width: 350px) {
   .header-section .navbar .custom-pos {
     right: 65%;
   }

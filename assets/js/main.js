@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(document).click(function (event) {
-      if (!$(event.target).closest('.common_toggles, .common_area, .common_toggles2, .common_area2, .common_toggles3, .common_area3, .left-nav-icon, .nav_aside').length) {
-        $(".common_area, .common_area2, .common_area3, .nav_aside").removeClass("show");
+      if (!$(event.target).closest('.common_toggles, .common_area, .common_toggles2, .common_area2, .common_toggles3, .common_area3, .left-nav-icon, .nav_aside, .footfixedbtn, .fixed_footer').length) {
+        $(".common_area, .common_area2, .common_area3, .nav_aside, .fixed_footer").removeClass("show");
       }
     });
 

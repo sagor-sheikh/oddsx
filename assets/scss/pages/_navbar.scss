@@ -29,7 +29,7 @@
                     position: absolute;
                     z-index: 1;
                     top: 0;
-                    left: -30%;
+                    left: -34%;
                     font-size: 16px;
                     background: rgb(var(--p2));
                     border-radius: 4px;
@@ -711,12 +711,19 @@
                 }
                 @include maxQuery(768){
                     top: 15% !important; 
+                    right: 10%;
                 }
                 @include maxQuery(575) {
                     right: 48%;
                     top: 10px;
                 }
                 @include maxQuery(480){
+                    right: 43%; 
+                }
+                @include maxQuery(410){
+                    right: 53%; 
+                }
+                @include maxQuery(350){
                     right: 65%; 
                 }
             }
