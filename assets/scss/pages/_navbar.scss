@@ -720,7 +720,14 @@
                     right: 65%; 
                 }
             }
-
+            .custom-postwo{
+                @include maxQuery(991){
+                    right: 10% !important;
+                }
+                @include maxQuery(480){
+                    right: 15% !important;
+                }
+            }
             .navbar-toggler {
                 display: inline-block;
                 position: absolute;

@@ -2,7 +2,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
-    setTimeout(function(){
+    setTimeout(function () {
       $('body').addClass('loaded');
     }, 1000);
 
@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(document).click(function (event) {
-      if (!$(event.target).closest('.common_toggles, .common_area, .common_toggles2, .common_area2, .common_toggles3, .common_area3').length) {
-        $(".common_area, .common_area2, .common_area3").removeClass("show");
+      if (!$(event.target).closest('.common_toggles, .common_area, .common_toggles2, .common_area2, .common_toggles3, .common_area3, .left-nav-icon, .nav_aside').length) {
+        $(".common_area, .common_area2, .common_area3, .nav_aside").removeClass("show");
       }
     });
 
@@ -330,7 +330,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ];
 
-
     // Current Year
     $(".currentYear").text(new Date().getFullYear());
 
@@ -403,9 +402,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //Custom Tab
     $(".tablinks .nav-links").each(function () {
       var targetTab = $(this).closest(".singletab");
-      targetTab.find(".tablinks .nav-links").each(function() {
+      targetTab.find(".tablinks .nav-links").each(function () {
         var navBtn = targetTab.find(".tablinks .nav-links");
-        navBtn.click(function(){
+        navBtn.click(function () {
           navBtn.removeClass('active');
           $(this).addClass('active');
           var indexNum = $(this).closest("li").index();
@@ -417,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Fixed footer up and down
-    $(".footfixedbtn").click(function (){
+    $(".footfixedbtn").click(function () {
       $(".fixed_footer").toggleClass("show");
     });
 
@@ -444,5 +443,6 @@ document.addEventListener("DOMContentLoaded", function () {
       $('.amount-active').removeClass('active');
       $(this).addClass('active');
     });
+
   });
 });

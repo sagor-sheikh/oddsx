@@ -2515,6 +2515,16 @@ input[type=radio] {
     right: 65%;
   }
 }
+@media (max-width: 991px) and (max-width: 991px) {
+  .header-section .navbar .custom-postwo {
+    right: 10% !important;
+  }
+}
+@media (max-width: 991px) and (max-width: 480px) {
+  .header-section .navbar .custom-postwo {
+    right: 15% !important;
+  }
+}
 @media (max-width: 991px) {
   .header-section .navbar .navbar-toggler {
     display: inline-block;
